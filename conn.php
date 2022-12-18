@@ -3,6 +3,7 @@ $conn = new mysqli("localhost","root","","cricket") or die("Faild to connect wit
 $date = date("Y-m-d");
 $time = date("h:i:sa");
 $matchDate = "25-12-2022";
+$orgManNumber= "+91 8084110284";
 $headerName = "Katka Cricket Club - Session 3";
 function get_client_ip() {
     $ipaddress = '';

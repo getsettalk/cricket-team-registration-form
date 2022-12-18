@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<?php
+require('./conn.php');
+?>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +14,7 @@
 
 <body>
     <header>
-        <h3>Katka Cricket Club - Session 3</h3>
+    <h3><?php echo $headerName; ?></h3>
     </header>
     <section class="d-flex justify-content-center align-content-center p-2">
         <div class="card">
@@ -57,7 +58,7 @@
                     <p class="text-center ssMsg">Hi <span id="uname"></span>. Your Registration for Tournament has been
                         Successfully done.you have to now
                         pay initital apply fee ₹ 501.
-                        we will call you if you will selected for this tournament by this Phone number : +91 8080808080
+                        we will call you if you will selected for this tournament by this Phone number : <?php echo $orgManNumber; ?>
                     </p>
                     <p style="text-align: center;">Thank You !</p>
                 </div>

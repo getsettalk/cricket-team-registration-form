@@ -1,6 +1,7 @@
-<!DOCTYPE html>
+<?php
+require('./conn.php');
+?>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,14 +14,14 @@
 
 <body>
     <header>
-        <h3>Katka Cricket Club - Session 3</h3>
+        <h3><?php echo $headerName; ?></h3>
     </header>
     <section class="d-flex justify-content-center align-content-center p-2">
         <div class="card">
             <div class="card-body bg1">
                 <p class="text-center">अपार हर्ष के साथ सूचित किया जाता है कि कटका क्रिकेट क्लब के द्वारा नाईट मैच
                     "Short Boundry"
-                    टूर्नामेंट का आयोजन दिनांक <span class="specialDate">18-12-2022</span> को किया जा रहा है</p>
+                    टूर्नामेंट का आयोजन दिनांक <span class="specialDate"><?php echo $matchDate; ?></span> को किया जा रहा है</p>
                 <div class="d-flex align-content-center justify-content-center ">
                     <p class="infotxt"> इस टूर्नामेंट के कुछ खास बातें इस प्रकार से है:</p>
                 </div>
@@ -45,7 +46,7 @@
                     <p class="addr">Near : कटका,काली मंदिर</p>
                 </div>
                 <div class="d-flex align-content-center justify-content-center">
-                    <a href="register.html" class="btnLink">Register now</a>
+                    <a href="register.php" class="btnLink">Register now</a>
                 </div>
 
             </div>
